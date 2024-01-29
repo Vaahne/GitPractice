@@ -1,0 +1,296 @@
+    1  clear
+    2  sudo su -
+    3  clear
+    4  history
+    5  systemctl status jenkins
+    6  systemctl start jenkins
+    7  sudo su -
+    8  ls -l
+    9  mkdir d1 d2 d3
+   10  cd d1
+   11  touch f1 f2 f3
+   12  cat >f1
+   13  clear
+   14  scp f1 ec2-user@13.57.8.208:/tmp
+   15  cd ./tmp
+   16  locate tmp
+   17  clear
+   18  ls -la
+   19  cd ..
+   20  locate tmp
+   21  find -type d -name tmp
+   22  locate jenkins
+   23  rpm -qa jenkins
+   24  sudo systemctl status jenkins
+   25  sudo su -
+   26  sudo siu -
+   27  sudo su -
+   28  sudo su tmp
+   29  clear
+   30  cd /tmp
+   31  ls -l
+   32  cd ..
+   33  exity
+   34  exit
+   35  clear
+   36  ls -l
+   37  cd d1
+   38  ls -l
+   39  scp f2 ec2-user@13.57.8.208:/tmp
+   40  sudo su -
+   41  sudo yum whatprovides java
+   42  exit
+   43  clear
+   44  history
+   45  sudo su -
+   46  cd /tmp
+   47  ls -l
+   48  exit
+   49  clear
+   50  cd /var/log/syslog
+   51  locate var
+   52  find -name var -type d
+   53  find -name var -type f
+   54  sudo su -
+   55  ls -l
+   56  java --version
+   57  which java
+   58  locate java
+   59  id
+   60  cat /etc/passwd
+   61  sudo su jenkins
+   62  id admin
+   63  rpm -qa java
+   64  sudo yum install git -y
+   65  java --version
+   66  clear
+   67  ls -l
+   68  cd d1
+   69  ls -l
+   70  ping google.com
+   71  ping 172.31.22.55
+   72  clear
+   73  git --version
+   74  mkdir gitRepo
+   75  cd gitRepo
+   76  git init
+   77  git branch
+   78  git config --global user.email "vaahne@yahoo.com"
+   79  git config --global user.name "vaahne"
+   80  git config credential.helper store
+   81  touch file.txt
+   82  cat > file.txt
+   83  git add .
+   84  git statfus
+   85  git status
+   86  git push 
+   87  git remote add origin https://github.com/Vaahne/GitPractice.git
+   88  git push 
+   89  git push --set-upstream origin main
+   90  git status
+   91  git add .
+   92  git commit -m "message from linux"
+   93  git push
+   94  git push --set-upstream origin master
+   95  git status
+   96  ls -l
+   97  clear
+   98  touch file1.txt
+   99  cat >> file1.txt
+  100  git status
+  101  git add .
+  102  git commit -m "second commit file1.txt"
+  103  git push
+  104  git status
+  105  clear
+  106  git branch
+  107  git branch -M main
+  108  git branch
+  109  clear
+  110  git status
+  111  git branch -b branch1
+  112  git branch
+  113  clear
+  114  git branch branch1
+  115  git branch
+  116  git checkout -b branch1
+  117  git switch branch1
+  118  git branch
+  119  touch branchFile1.txt
+  120  cat >> branchFile1.txt 
+  121  git push --set-upstream origin branch1
+  122  git add .
+  123  git status
+  124  git commit -m "After commiting file from branch1"
+  125  git push
+  126  git status
+  127  git branch
+  128  git branch subbranch1
+  129  git branch
+  130  git push --set-upstream origin subbranch1
+  131  git branch
+  132  touch file1_subBranch1
+  133  cat >> file1_subBranch1 
+  134  clear
+  135  git add.
+  136  git add .
+  137  git commit -m "File for subbranch1"
+  138  git push
+  139  git status
+  140  git switch branch1
+  141  ls -l
+  142  rm file1_subBranch1 
+  143  git add .
+  144  git commit "deleted file "
+  145  git commit -m "deleted file "
+  146  git push
+  147  git status
+  148  git log --oneline
+  149  git diff 1610827 cad6636
+  150  git diff dee2739 1610827
+  151  git branch -d subbranch1 
+  152  git branch
+  153  git branch subBranch1
+  154  git switch subBranch1
+  155  git branch
+  156  touch subFile1
+  157  cat > subFile1
+  158  git push --set-upstream origin subBranch1
+  159  git add .
+  160  git commit -m "Sub file from subbranch"
+  161  git push
+  162  git branch
+  163  git branch minibranch subBranch1
+  164  git switch minibranch 
+  165  git branch
+  166  cat > minifile
+  167  git staus
+  168  git status
+  169  git add .
+  170  git commit -m "This is for mini file"
+  171  git push
+  172  git status
+  173  git push --set-upstream miniBranch
+  174  git branch
+  175  git push --set-upstream minibranch
+  176  git switch subBranch1
+  177  git push --set-upstream minibranch
+  178  git push --set-upstream branch1 minibranch
+  179  git push --set-upstream subBranch1 minibranch
+  180  git push --set-upstream origin minibranch
+  181  git status
+  182  git branch
+  183  ls -l
+  184  git pull origin 
+  185  ls -
+  186  ls -l
+  187  git branch
+  188  git switch main
+  189  ls -l
+  190  git switch branch1
+  191  ls -l
+  192  git switch subBranch1
+  193  ls -l
+  194  git switch minibranch
+  195  ls -
+  196  ls -l
+  197  rm minifile
+  198  git add .
+  199  git commit -d "delete file"
+  200  git commit -m "delete file"
+  201  git push
+  202  git branch
+  203  git branch -d subBranch1
+  204  git branch
+  205  git branch -d branch1
+  206  ls -
+  207  ls -l
+  208  git add .
+  209  git status
+  210  git commit -m "delete branches"
+  211  git push
+  212  git push origin -d branch1
+  213  git push origin -d subbranch1
+  214  git push origin -d branch1
+  215  git push origin -d subbranch1
+  216  git push origin -d minibranch
+  217  git push origin -d subBranch1
+  218  clear
+  219  git branch
+  220  git switch main
+  221  git push origin -d minibranch
+  222  git branch
+  223  ls -l
+  224  git branch production
+  225  git switch production
+  226  ls -l
+  227  clear
+  228  cat > procfile
+  229  git push --set-upstream origin production
+  230  git status
+  231  ls -l
+  232  git branch
+  233  git add .
+  234  git commit -m "production file"
+  235  git push 
+  236  git status
+  237  git bracnch
+  238  git branch
+  239  rm procfile 
+  240  git add .
+  241  git commit -m "delete"
+  242  git push
+  243  clear
+  244  git branch
+  245  touch file1
+  246  cat > file1
+  247  rm file1
+  248  cat > prodf
+  249  git add .
+  250  git commit -m " prod file"
+  251  git push
+  252  ls -l
+  253  git branch
+  254  git checkout -b uat production 
+  255  git branch
+  256  cat > insideuat
+  257  git push --set-upstream production uat
+  258  git push --set-upstream origin uat
+  259  git branch
+  260  git add .
+  261  git commit -m "uat file"
+  262  git push
+  263  git status
+  264  git log --oneline
+  265  git diff 987fceb 987fceb
+  266  git diff 987fceb 792efef
+  267  git branch
+  268  git switch main
+  269  git branch 
+  270  git switch production
+  271  git branch 
+  272  git checkout -b hotfix production
+  273  git branch 
+  274  cat > insideHotfix
+  275  git push --set-upstream origin hotfix
+  276  git status
+  277  git add .
+  278  git commit -m "inside hotfix"
+  279  git push
+  280  git branch
+  281  git push origin -d uat
+  282  git push origin -d production
+  283  git  push origin -d hotfix
+  284  git branch -d minibranch
+  285  git branch -D minibranch
+  286  git branch
+  287  git branch -d production
+  288  git branch -d uat
+  289  git switch main
+  290  git branch -d hotfix
+  291  git branch -D hotfix
+  292  git branch
+  293  git branch -D uat
+  294  clear
+  295  history
+  296  history > history.txt
